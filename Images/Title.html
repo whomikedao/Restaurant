@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/Restaurant/menu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Title_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Title_files/header.css">
+    <link rel="stylesheet" href="./Title_files/main.css">
+    <link rel="stylesheet" href="./Title_files/footer.css">
+    <link href="./Title_files/css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="position-relative overflow-hidden">
+        <div class="position-absolute display-1 text-danger d-flex flex-column w-100 h-100 align-items-center justify-content-center" style="z-index: 15;"><!--child of header (text layer)-->
+            <div class="lobster d-none d-md-block display-1"><!--child of text layer-->
+            Nick's Crawfish
+            </div>
+            <div class="display-4 text-light d-none d-md-block display-1">
+            Houston's Viet Cajun Grub
+            </div>
+            <div class="d-md-none d-lg-none d-xl-none"><!--child of text layer-->
+            <h1 class="lobster">Nick's Crawfish</h1>
+            <h5 class="text-light">
+            Houston's Viet Cajun Grub
+            </h5>
+            </div>
+        </div>
+
+        <!--Header Image and Video-->
+        <div class="position-absolute childPosition w-100 h-100 bg-dark" style="top: 0px; left: 0px; z-index: 10; opacity: .3;"><!--child of header-->
+
+        </div>
+        <div class="position-absolute h-100" style="z-index: 1"><!--child of header-->
+            <img src="./Title_files/menu.jpg" class="w-100 mb-20" alt="">
+        </div> 
+    </header>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <!--branding-->
+        <a class="navbar-brand text-danger" href="http://127.0.0.1:5500/Restaurant/menu.html#">Nick's</a>
+        <!--Navigation bar collapse on smaller devices-->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--parent-->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active"><!--child-->
+                <a class="nav-link" href="http://127.0.0.1:5500/Restaurant/menu.html#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><!--child-->
+                <a class="nav-link" href="http://127.0.0.1:5500/Restaurant/menu.html#">Menu</a>
+            </li>
+            <!--dropdown-->
+            <li class="nav-item dropdown"><!--child different style-->
+                <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/Restaurant/menu.html#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId"><!--child of the collapsable options-->
+                <a class="dropdown-item" href="http://127.0.0.1:5500/Restaurant/menu.html#">About Us</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5500/Restaurant/menu.html#">Contact Us</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./Title_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./Title_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./Title_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

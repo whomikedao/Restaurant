@@ -8,8 +8,39 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   </head>
   <body>
+
+    <header class="position-relative overflow-hidden">
+        <div class="position-absolute display-1 text-danger d-flex flex-column w-100 h-100 align-items-center justify-content-center" style="z-index: 15;"><!--child of header (text layer)-->
+            <div class="lobster d-none d-md-block display-1"><!--child of text layer-->
+            Nick's Crawfish
+            </div>
+            <div class="display-4 text-light d-none d-md-block display-1">
+            Houston's Viet Cajun Grub
+            </div>
+            <div class="d-md-none d-lg-none d-xl-none"><!--child of text layer-->
+            <h1 class="lobster">Nick's Crawfish</h1>
+            <h5 class="text-light">
+            Houston's Viet Cajun Grub
+            </h5>
+            </div>
+        </div>
+
+        <!--Header Image and Video-->
+        <div class="position-absolute childPosition w-100 h-100 bg-dark" style="top: 0px; left: 0px; z-index: 10; opacity: .3;"><!--child of header-->
+
+        </div>
+        <div class="position-absolute h-100" style="z-index: 1"><!--child of header-->
+            <img src="Images/menu.jpg" class="w-100 d-flex" alt="">
+        </div> 
+    </header>
+
+
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <!--branding-->
         <a class="navbar-brand text-danger" href="#">Nick's</a>

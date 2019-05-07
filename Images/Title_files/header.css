@@ -1,0 +1,17 @@
+header{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.headerImg{
+    min-height: 100%;
+}
+
+.childPosition{ /*for any position-absolute. needs top and bottom*/
+    top: 0px;
+    bottom: 0px;
+}
+
+.lobster{
+    font-family: 'Lobster', cursive;
+}
